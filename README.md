@@ -1,1 +1,1 @@
-# TROP:Tandem Repeat Overlap Parser
+# TROP : Tandem Repeat Overlap Parser
