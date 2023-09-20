@@ -1,7 +1,8 @@
 # TROP : Tandem Repeat Overlap Parser
 
 
-The script requires the ```.dat``` file produced by TRF, 
+The script requires the ```.dat``` file produced by TRF. 
+
 Here, we use the example file below from a nanopore flongle run
 
 ```
