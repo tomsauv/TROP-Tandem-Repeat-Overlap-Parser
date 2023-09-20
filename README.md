@@ -23,4 +23,6 @@ require(data.table)
 ```
 **3) Load the script (after you download it from this repositroy and placed it your working directory)**
 
- 
+```
+source("TROP.R")
+```
