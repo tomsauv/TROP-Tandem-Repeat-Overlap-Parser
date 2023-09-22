@@ -1,13 +1,18 @@
 
 # TROP : Tandem Repeat Overlap Parser
 
-# Running Tandem Repeat Finder (TRF) 
+make intro blabla Tandem Repeat Finder (TRF) 
+TROP is R script (not best langage and should be recoded in perl or others
+list existing tools (copy from the msc the list)
 
-For the above tutorial and provided files, Tandem Repeat Finder ran with the following options on the fasta file ```NA_all.fasta```
+
+# Running TRF
+
+For the above tutorial and provided files, TRF ran with the following options on the fasta file ```NA_all.fasta```
 
 ```trf NA_all.fasta 2 5 7 80 10 50 2000```
 
-Further explanations, options for running TRF can be found at the authors dedicated repository below:
+Further explanations, options for running TRF can be found at the authors dedicated github repository below:
 https://github.com/Benson-Genomics-Lab/TRF
 
 # Running TROP
