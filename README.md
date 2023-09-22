@@ -42,7 +42,9 @@ For the above tutorial and provided files, Tandem Repeat Finder ran with the fol
 # How to cite TROP
 
 Sauvage T, Cormic A, Passerini D. A comparison of Oxford nanopore library strategies for bacterial genomics. BMC Genomics. 2023 xxxxxxxxxx
+
 or directly
+
 Sauvage T. TROP : Tandem Repeat Overlap Parser. https://github.com/tomsauv/TROP-Tandem-Repeat-Overlap-Parser. Accessed September XX, 2023. DOI XXXXXXXXXXXXXXXXXXX
 
 # Additional references
