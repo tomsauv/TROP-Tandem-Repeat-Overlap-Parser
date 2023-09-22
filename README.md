@@ -27,7 +27,9 @@ require(data.table)
 source("TROP.R")
 ```
 
-# Tandem Repeat Finder (TRF)
+# Running Tandem Repeat Finder (TRF) 
+
+https://github.com/Benson-Genomics-Lab/TRF
 
 Tandem Repeat Finder ran with the following options on file ```NA_all.fasta```
 
