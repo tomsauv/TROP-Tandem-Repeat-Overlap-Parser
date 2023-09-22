@@ -8,8 +8,8 @@ list existing tools (copy from the msc the list)
 
 # Running TRF
 
-For the present tutorial and provided files, TRF ran with the following options on the [provided] fasta file ```NA_all.fasta```
-[nanopore reads]
+For the present tutorial and provided files, TRF ran with the following options on the (provided) fasta file ```NA_all.fasta```
+(nanopore reads)
 
 ```trf NA_all.fasta 2 5 7 80 10 50 2000```
 
