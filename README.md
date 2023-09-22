@@ -26,3 +26,7 @@ require(data.table)
 ```
 source("TROP.R")
 ```
+
+Tandem Repeat Finder ran with the following options on file ```NA_all.fasta```
+
+```trf NA_all.fasta 2 5 7 80 10 50 2000```
