@@ -29,8 +29,9 @@ source("TROP.R")
 
 # Running Tandem Repeat Finder (TRF) 
 
+Further explanations, option, for running TRF and appropriate citations can be found at the authors dedicated repository below:
 https://github.com/Benson-Genomics-Lab/TRF
 
-Tandem Repeat Finder ran with the following options on file ```NA_all.fasta```
+For the above tutorial and provided files, Tandem Repeat Finder ran with the following options on the fasta file ```NA_all.fasta```
 
 ```trf NA_all.fasta 2 5 7 80 10 50 2000```
