@@ -14,7 +14,7 @@ NA_all.fasta.2.5.7.80.10.50.2000.dat
 ```
 setwd("C:/Users/tomsauv/my_R_analyses")
 ``` 
-**Place all files necessary in this folder on your computer (above is an example, adjust to the folder path on your computer)**
+Place all files necessary in this folder on your computer (above is an example, adjust to the folder path on your computer)
 
 **2) Load necessary R packagae (install it prior)**
 
