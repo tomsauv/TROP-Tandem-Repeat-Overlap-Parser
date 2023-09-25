@@ -6,7 +6,7 @@ TROP is R script (not best langage and should be recoded in perl or others
 list existing tools (copy from the msc the list)
 
 # Prerequisites
-1) Running TRF to prodcue a ```.dat``` file
+**1) Running TRF to prodcue a ```.dat``` file**
 
 For the present tutorial and provided files, TRF ran with the following options on the (provided) fasta file ```NA_all.fasta```
 (nanopore reads)
@@ -16,7 +16,7 @@ For the present tutorial and provided files, TRF ran with the following options 
 Further explanations, options for running TRF can be found at the authors dedicated github repository below:
 https://github.com/Benson-Genomics-Lab/TRF
 
-2) Preparing a tabulated sequence length file
+**2) Preparing a tabulated sequence length file**
 
 how to do etc...for nanopore
 
