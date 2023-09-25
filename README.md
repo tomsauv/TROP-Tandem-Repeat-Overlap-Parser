@@ -6,7 +6,7 @@ TROP is R script (not best langage and should be recoded in perl or others
 list existing tools (copy from the msc the list)
 
 # Prerequisites
-**1) Running TRF to prodcue a ```.dat``` file**
+**1) Running TRF to produce a ```.dat``` file**
 
 For the present tutorial and provided files, TRF ran with the following options on the (provided) fasta file ```NA_all.fasta```
 (nanopore reads)
