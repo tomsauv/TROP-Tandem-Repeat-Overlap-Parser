@@ -13,7 +13,7 @@ For the present tutorial and provided files, TRF ran with the following options 
 
 ```trf NA_all.fasta 2 5 7 80 10 50 2000```
 
-Please visit TRF's github repository on available options (https://github.com/Benson-Genomics-Lab/TRF)
+Please visit TRF's github repository for further information (https://github.com/Benson-Genomics-Lab/TRF)
 
 **2) Preparing a tabulated sequence length file**
 
