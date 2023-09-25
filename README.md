@@ -39,7 +39,7 @@ require(data.table)
 mydf <- scan("NA_all.fasta.2.5.7.80.10.50.2000.dat", what = "", sep = "\n")
 ```
 
-**3) Load the script (after you download it from this repository and placed it your working directory)**
+**3) Load the script (after you download it from this repository and place it your working directory)**
 ```
 source("TROP.R")
 ```
