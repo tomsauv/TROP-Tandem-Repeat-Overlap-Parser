@@ -1,15 +1,6 @@
 
 # TROP : Tandem Repeat Overlap Parser
 
-make intro blabla Tandem Repeat Finder (TRF) 
-TROP is R script (not best langage and should be recoded in perl or others
-list existing tools (copy from the msc the list)
-
-"In previous work [3], we observed reads made of abundant tandem repeat artifact not representative of the genome, which often led to the assembly of artifactual tandem contigs. To date, the tandem output at the flow cell and channel level, and across different library preparation has not been carefully investigated."
-"Finally, we used TRF as a classic tool for tandem detection [11] with a custom script [12]) to join tandems whose coordinates overlap. Future studies desiring to characterize tandem content could test recent software development for comparison. These include nucleotide-based detection softwares, such as TideHunter [13], NCRF [14], NanoSTR [15], mTR [16], and signal-based softwares, such as DeepRepeat [17] and WarpSTR [18], all of which are potentially computationally much faster than TRF [11]. Their use to develop trimming tools represent a potential avenue of research to remove/mask artifactual tandems from raw reads prior to assembly. Indeed, this may be important as we spotted the integration of artifactual tandem repeats on one of our chromosome assembly (MIP2461, Table 2, see indices). We hypothesize that such issue may happen when sufficient reads share the same artifactual tandem sequence artifact on their edge (Fig. 5)."
-"The TRF report was then parsed to join overlapping tandems and compute total tandem length per read as well as their location with a custom script written in R [46] named TROP (Tandem Repeat Overlap Parser [12])."
-
-put graph? fig?
 
 # Prerequisites
 **1) Running TRF to produce a ```.dat``` file**
