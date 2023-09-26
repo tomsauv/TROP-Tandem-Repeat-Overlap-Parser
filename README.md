@@ -17,6 +17,9 @@ For the present tutorial, TRF was run with the following options on a fasta file
 
 ```trf NA_all.fasta 2 5 7 80 10 50 2000```, which produces ```NA_all.fasta.2.5.7.80.10.50.2000.dat``` for later parsing by TROP
 
+The dat file contains x, y,w all detected TR, many of which overlap
+
+
 Please visit TRF's github repository for further information on TRF installation and running options (https://github.com/Benson-Genomics-Lab/TRF)
 
 **2) Preparing a tabulated sequence length file**
