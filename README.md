@@ -2,6 +2,7 @@
 # TROP : Tandem Repeat Overlap Parser
 
 from a nanopore flongle run
+memory
 
 # Prerequisites
 **1) Running TRF to produce a ```.dat``` file**
