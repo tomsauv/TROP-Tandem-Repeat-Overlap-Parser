@@ -15,7 +15,7 @@ list existing tools (copy from the msc the list)
 
 For the present tutorial, TRF was run with the following options on a fasta file of R9.4 nanopore reads (fasta file ```NA_all.fasta``` not provided)
 
-```trf NA_all.fasta 2 5 7 80 10 50 2000```
+```trf NA_all.fasta 2 5 7 80 10 50 2000```, which produces ```NA_all.fasta.2.5.7.80.10.50.2000.dat``` 
 
 Please visit TRF's github repository for further information on TRF installation and running options (https://github.com/Benson-Genomics-Lab/TRF)
 
