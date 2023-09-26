@@ -1,6 +1,7 @@
 
 # TROP : Tandem Repeat Overlap Parser
 
+from a nanopore flongle run
 
 # Prerequisites
 **1) Running TRF to produce a ```.dat``` file**
@@ -37,7 +38,7 @@ a9fc5d29-acd8-4858-81c0-5cf6434708c0	894
 
 The script requires the ```.dat``` file produced by TRF. 
 
-Here, we use the example file below from a nanopore flongle run
+Here, we use the example file indicated further above
 ```
 NA_all.fasta.2.5.7.80.10.50.2000.dat
 ``` 
@@ -51,16 +52,21 @@ Place all files necessary in this folder on your computer (above is an example, 
 ```
 require(data.table)
 ```
-**3) Load the above ```.dat``` file with R function ```scan```**
-```
-mydf <- scan("NA_all.fasta.2.5.7.80.10.50.2000.dat", what = "", sep = "\n")
-```
 
 **3) Load the script (after you download it from this repository and place it your working directory)**
 ```
-source("TROP.R")
+source("trop.r")
 ```
 
+**4) Run the script by filling the name of corresponding files as below**
+
+trop
+
+
+**X) Load the above ```.dat``` file with R function ```scan```**
+```
+mydf <- scan("NA_all.fasta.2.5.7.80.10.50.2000.dat", what = "", sep = "\n")
+```
 
 
 
