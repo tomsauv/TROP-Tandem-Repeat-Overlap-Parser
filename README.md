@@ -59,7 +59,7 @@ require(data.table)
 source("trop.r")
 ```
 
-**4) Run the script by filling the name of corresponding files as below**
+**4) Run the script by filling the name of files to be parsed as below**
 
 trop
 
