@@ -89,13 +89,16 @@ source("trop.r")
 
 **4) Run the script by filling the name of files to be parsed as below**
 
-trop
+The first argument is the ```.dat``` file
+The second argument is the name of the sequence length file
 
 
-**X) Load the above ```.dat``` file with R function ```scan```**
 ```
-mydf <- scan("NA_all.fasta.2.5.7.80.10.50.2000.dat", what = "", sep = "\n")
+trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 ```
+
+
+
 
 
 
