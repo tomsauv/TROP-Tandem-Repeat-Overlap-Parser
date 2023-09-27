@@ -17,7 +17,7 @@ For the present tutorial, TRF was run with the following options on a fasta file
 
 ```trf NA_all.fasta 2 5 7 80 10 50 2000```, which produces ```NA_all.fasta.2.5.7.80.10.50.2000.dat``` for later parsing by TROP
 
-If you open the ```dat``` file in a simple text editor, results sequences by sequences should look as below:
+If you open this provided example file in a simple text editor, results sequences by sequences look as below:
 
 ```
 Tandem Repeats Finder Program written by:
