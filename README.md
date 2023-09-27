@@ -17,7 +17,39 @@ For the present tutorial, TRF was run with the following options on a fasta file
 
 ```trf NA_all.fasta 2 5 7 80 10 50 2000```, which produces ```NA_all.fasta.2.5.7.80.10.50.2000.dat``` for later parsing by TROP
 
-The dat file contains x, y,w all detected TR, many of which overlap
+If you open the ```dat``` file in a siple text editor, it should look as below and contains results sequences by sequences
+
+```
+Tandem Repeats Finder Program written by:
+
+Gary Benson
+Program in Bioinformatics
+Boston University
+Version 4.09
+
+
+Sequence: e387a9f8-ebed-4d86-81a1-087c17c96745 runid=e3cf134550fca3678f03a505c0ce5509328f672c sampleid=no_sample read=36148 ch=109 start_time=2022-04-05T03:45:24Z model_version_id=2021-05-17_dna_r9.4.1_minion_
+
+
+
+Parameters: 2 5 7 80 10 50 2000
+
+
+59 185 52 2.4 54 79 11 168 28 14 25 30 1.95 CTTTCTGTTGGTGCTGATATTGCTGAAAATAGAGCGACAGGCAAGAGACAATAT CTTTCTGTTGGTGCTGATGGCTTGAAAATAGAGCGACAGGCAAGAGACAATATCTTTCATTGGTATGATATTGCTGAAGATAGAGCGACAGGCAAGACAATATCTTTCTGTTGGTGCAGATATTGCT
+
+
+Sequence: d80c3c51-9115-419c-a8cf-3245e320a981 runid=e3cf134550fca3678f03a505c0ce5509328f672c sampleid=no_sample read=11233 ch=120 start_time=2022-04-04T14:00:13Z model_version_id=2021-05-17_dna_r9.4.1_minion_
+
+
+
+Parameters: 2 5 7 80 10 50 2000
+
+
+157 315 74 2.2 75 83 3 220 32 15 25 26 1.95 TGAAGATAGAGCTGATATTACTGAAGTATAAGGCGACAGGCAAGACAATATCTGCCAATTAGTCACTAATATTGC TGAAGATAGAGCTGATATTGCTGAAGATGAGCGACAGGCAAGACAATATCTGCCAATTGGTGCTGATATTGCTGAAGATAGAGCTGATATTACTGAAGTTTAAGGCGACAGGCAAGGCAATATCTTTCCATTAGTCACTAGTATTGCTGAAGATAGAGC
+
+...
+```
+
 
 
 Please visit TRF's github repository for further information on TRF installation and running options (https://github.com/Benson-Genomics-Lab/TRF)
