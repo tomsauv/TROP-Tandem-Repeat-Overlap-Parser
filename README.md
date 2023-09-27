@@ -56,7 +56,8 @@ awk '/^>/{if (l!="") print l; print; l=0; next}{l+=length($0)}END{print l}' NA_a
 ```
 
 Note that here, we split the nanopore sequence title to only keep the main identifier. 
-The resulting tabulated file (named above ```NA_all_tabulated_lengths.txt```) should be as below to be processed by TROP
+
+The resulting tabulated file (named above ```NA_all_tabulated_lengths.txt```) should be formatted as below
 (The first column is the sequence name, second column is the sequence length in bp)
 
 ```
