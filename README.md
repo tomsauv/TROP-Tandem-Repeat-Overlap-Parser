@@ -55,7 +55,8 @@ There are a number of ways this can be done, for instance, you could use the ```
 awk '/^>/{if (l!="") print l; print; l=0; next}{l+=length($0)}END{print l}' NA_all.fasta | cut -d ' ' -f 1 | paste - - | sed -r 's/^>//g' > NA_all_tabulated_lengths.txt
 ```
 
-Note that here, we split the nanopore sequence title to only keep the main identifier. The resulting tabulated file should be as below to be processed by TROP
+Note that here, we split the nanopore sequence title to only keep the main identifier. 
+The resulting tabulated file (named above ```NA_all_tabulated_lengths.txt```) should be as below to be processed by TROP
 (The first column is the sequence name, second column is the sequence length in bp)
 
 ```
