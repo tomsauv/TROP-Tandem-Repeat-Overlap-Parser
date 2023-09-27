@@ -45,7 +45,7 @@ Sequence: d80c3c51-9115-419c-a8cf-3245e320a981 runid=e3cf134550fca3678f03a505c0c
 
 
 
-Please visit TRF's github repository for further information on TRF installation, running and output options (https://github.com/Benson-Genomics-Lab/TRF)
+Please visit ```trf```'s github repository for further information on ```trf``` installation, running and output options (https://github.com/Benson-Genomics-Lab/TRF)
 
 **2) Preparing a tabulated sequence length file**
 
