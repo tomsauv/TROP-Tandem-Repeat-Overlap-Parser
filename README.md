@@ -49,7 +49,7 @@ Please visit TRF's github repository for further information on TRF installation
 
 **2) Preparing a tabulated sequence length file**
 
-There are a number of ways this can be done, for instance, you could use the awk command below (one-liner) on linux platform with the raw fasta reads:
+There are a number of ways this can be done, for instance, you could use the ```awk``` command below (one-liner) on linux platform with the raw fasta reads:
 
 ```
 awk '/^>/{if (l!="") print l; print; l=0; next}{l+=length($0)}END{print l}' NA_all.fasta | cut -d ' ' -f 1 | paste - - | sed -r 's/^>//g' > NA_all_tabulated_lengths.txt
