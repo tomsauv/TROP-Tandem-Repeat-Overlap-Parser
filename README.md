@@ -92,15 +92,16 @@ source("trop.r")
 
 **4) Run the script by filling the name of files to be parsed as below**
 
-The first argument is the ```.dat``` file
-The second argument is the name of the sequence length file
+The first argument is the ```.dat``` file.
+
+The second argument is the name of the sequence length file.
 
 
 ```
 trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 ```
 
-
+**OUTPUT**
 
 
 
