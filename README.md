@@ -11,9 +11,9 @@ NA_all.fasta.2.5.7.80.10.50.2000.dat
 
 
 # Prerequisites
-**1) Running TRF to produce a ```.dat``` file**
+**1) Running ```trf``` to produce a ```.dat``` file**
 
-For the present tutorial, TRF was run with the following options on a fasta file of R9.4 nanopore reads (fasta file ```NA_all.fasta``` not provided)
+For the present tutorial, ```trf``` was run with the following options on a ```fasta``` file of R9.4 nanopore reads (```NA_all.fasta```, not provided)
 
 ```trf NA_all.fasta 2 5 7 80 10 50 2000```, which produces ```NA_all.fasta.2.5.7.80.10.50.2000.dat``` for later parsing by TROP
 
