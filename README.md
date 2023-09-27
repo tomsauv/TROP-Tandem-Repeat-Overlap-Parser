@@ -2,7 +2,8 @@
 # TROP : Tandem Repeat Overlap Parser
 
 from a nanopore flongle run
-memory
+
+memory, made to use less memory
 
 The script requires the ```.dat``` file produced by TRF. 
 
