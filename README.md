@@ -9,7 +9,7 @@ The problem is that ```trf``` reports multiple overlapping tandem solution/bound
 
 Thus, ```trop``` parses the lowest and highest boundary of a repetitive region to better characterise overall tandem content along a read (output and location) 
 
-```trf``` output from long sequence reads (nanopore, pacbio) or assembled contigs can be parsed by ```trop``` (basically any ```fasta``` file ```trf``` will accept)
+```trop``` can parse any ```fasta``` file ```trf``` will accept. Here we ar emore interested in long sequence reads (nanopore, pacbio) or even assembled contigs
 
 # Prerequisites
 **1) Running ```trf``` to produce a ```.dat``` file**
