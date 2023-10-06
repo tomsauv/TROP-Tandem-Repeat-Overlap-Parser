@@ -1,6 +1,21 @@
 
 # TROP : Tandem Repeat Overlap Parser
 
+# Why this script
+
+Tandem Repeats Finder (trf) reports multiple tandem solution/boundaries for a given repetitive region, which is due to the nature of repetitive DNA and period parameters.
+
+```trop``` parses the lowest and highest bound to better characterise tandem content along a read (output and location) 
+
+```trf``` output from long sequence reads (nanopore, pacbio) or assembled contigs can be parsed by ```trop```
+
+# Context
+
+```trop``` came to be after artifactual sequence made entirely of tandem repeats were observed in nanopore sequencing experiment (Sauvage et al. 2023) 
+
+```trop``` was written to characterise and quantify this type of sequencing noise in long read sequencing
+
+
 from a nanopore flongle run
 
 memory, made to use less memory
@@ -118,3 +133,7 @@ Sauvage T. TROP : Tandem Repeat Overlap Parser. https://github.com/tomsauv/TROP-
 # Additional references
 
 Benson G. Tandem Repeats Finder: a program to analyze DNA sequences. Nucleic Acids Res. 1999; 27(2):573–580. doi:10.1093/nar/27.2.573
+
+# Comment
+
+speed etc....perl
