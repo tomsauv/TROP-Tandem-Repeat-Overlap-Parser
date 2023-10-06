@@ -3,27 +3,13 @@
 
 # Why this script
 
-Tandem Repeat Overlap Parser (```trop```) was written after artifactual sequences made entirely of tandem repeats were observed in nanopore sequencing experiment (Sauvage et al. 2019, 2023). ```trop``` parses files produced by Tandem Repeats Finder (```trf```) to characterise and quantify this type of sequencing noise.
+```trop``` was thought about after artifactual sequences made entirely of tandem repeats were observed in nanopore sequencing experiments (Sauvage et al. 2023). In seeking to characterize and quantify this type of sequencing noise, we used a classic tool known as Tandem Repeats Finder (```trf```).
 
-```trop``` reports multiple tandem solution/boundaries for a given repetitive region, which is due to the nature of repetitive DNA and period parameters.
+The problem is that ```trf``` reports multiple tandem solution/boundaries for a given repetitive region, which is due to the imperfect nature of repetitive DNA and period parameters.
 
-```trop``` parses the lowest and highest bound of a repetitive region to better characterise tandem content along a read (output and location) 
+Thus, ```trop``` parses the lowest and highest bound of a repetitive region to better characterise overall tandem content along a read (output and location) 
 
-```trf``` output from long sequence reads (nanopore, pacbio) or assembled contigs can be parsed by ```trop```
-
-# Context
-
-
-
-from a nanopore flongle run
-
-memory, made to use less memory
-
-The script requires the ```.dat``` file produced by TRF. 
-
-Here, we use the example file indicated further above
-NA_all.fasta.2.5.7.80.10.50.2000.dat
-
+```trf``` output from long sequence reads (nanopore, pacbio) or assembled contigs can be parsed by ```trop``` (basically any sequence ```fasta``` file ```trf``` will accept)
 
 # Prerequisites
 **1) Running ```trf``` to produce a ```.dat``` file**
@@ -119,8 +105,6 @@ trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 **OUTPUT**
 
 
-
-
 # How to cite TROP
 
 Sauvage T, Cormic A, Passerini D. A comparison of Oxford nanopore library strategies for bacterial genomics. BMC Genomics. 2023 xxxxxxxxxx
@@ -136,3 +120,5 @@ Benson G. Tandem Repeats Finder: a program to analyze DNA sequences. Nucleic Aci
 # Comment
 
 speed etc....perl
+from a nanopore flongle run, small file provided
+memory, made to use less memory
