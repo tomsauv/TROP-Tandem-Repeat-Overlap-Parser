@@ -3,7 +3,7 @@
 
 # Why this script
 
-```trop``` was thought about after artifactual sequences made entirely of tandem repeats were observed in nanopore sequencing experiments (Sauvage et al. 2023). In seeking to characterize and quantify this type of sequencing noise, we used a classic tool known as Tandem Repeats Finder (```trf```).
+```trop``` was thought about after artifactual sequences made entirely of tandem repeats were observed in nanopore sequencing (Sauvage et al. 2023). In seeking to characterize and quantify this type of sequencing noise, we used a classic tool known as Tandem Repeats Finder (```trf```, Benson 1999).
 
 The problem is that ```trf``` reports multiple tandem solution/boundaries for a given repetitive region, which is due to the imperfect nature of repetitive DNA and period parameters.
 
