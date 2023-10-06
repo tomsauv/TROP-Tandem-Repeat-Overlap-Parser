@@ -3,7 +3,9 @@
 
 # Why this script
 
-Tandem Repeats Finder (```trf```) reports multiple tandem solution/boundaries for a given repetitive region, which is due to the nature of repetitive DNA and period parameters.
+Tandem Repeat Overlap Parser (```trop```) was written after artifactual sequences made entirely of tandem repeats were observed in nanopore sequencing experiment (Sauvage et al. 2019, 2023). ```trop``` parses files produced by Tandem Repeats Finder (```trf```) to characterise and quantify this type of sequencing noise.
+
+```trop``` reports multiple tandem solution/boundaries for a given repetitive region, which is due to the nature of repetitive DNA and period parameters.
 
 ```trop``` parses the lowest and highest bound of a repetitive region to better characterise tandem content along a read (output and location) 
 
@@ -11,9 +13,6 @@ Tandem Repeats Finder (```trf```) reports multiple tandem solution/boundaries fo
 
 # Context
 
-```trop``` came to be after artifactual sequence made entirely of tandem repeats were observed in nanopore sequencing experiment (Sauvage et al. 2023) 
-
-```trop``` was written to characterise and quantify this type of sequencing noise in long read sequencing
 
 
 from a nanopore flongle run
