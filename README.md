@@ -5,11 +5,11 @@
 
 ```trop``` was thought about after artifactual sequences made entirely of tandem repeats were observed in nanopore sequencing (Sauvage et al. 2023). In seeking to characterize and quantify this type of sequencing noise, we used a classic tool known as Tandem Repeats Finder (```trf```, Benson 1999).
 
-The problem is that ```trf``` reports multiple tandem solution/boundaries for a given repetitive region, which is due to the imperfect nature of repetitive DNA and period parameters.
+The problem is that ```trf``` reports multiple overlapping tandem solution/boundaries for a given repetitive region, which is due to the imperfect nature of repetitive DNA and the period of the repetitive motif (and ```trf``` parameters).
 
-Thus, ```trop``` parses the lowest and highest bound of a repetitive region to better characterise overall tandem content along a read (output and location) 
+Thus, ```trop``` parses the lowest and highest boundary of a repetitive region to better characterise overall tandem content along a read (output and location) 
 
-```trf``` output from long sequence reads (nanopore, pacbio) or assembled contigs can be parsed by ```trop``` (basically any sequence ```fasta``` file ```trf``` will accept)
+```trf``` output from long sequence reads (nanopore, pacbio) or assembled contigs can be parsed by ```trop``` (basically any ```fasta``` file ```trf``` will accept)
 
 # Prerequisites
 **1) Running ```trf``` to produce a ```.dat``` file**
