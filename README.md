@@ -3,9 +3,9 @@
 
 # Why this script
 
-Tandem Repeats Finder (trf) reports multiple tandem solution/boundaries for a given repetitive region, which is due to the nature of repetitive DNA and period parameters.
+Tandem Repeats Finder (```trf```) reports multiple tandem solution/boundaries for a given repetitive region, which is due to the nature of repetitive DNA and period parameters.
 
-```trop``` parses the lowest and highest bound to better characterise tandem content along a read (output and location) 
+```trop``` parses the lowest and highest bound of a repetitive region to better characterise tandem content along a read (output and location) 
 
 ```trf``` output from long sequence reads (nanopore, pacbio) or assembled contigs can be parsed by ```trop```
 
