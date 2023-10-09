@@ -97,7 +97,7 @@ The first argument is the ```.dat``` file.
 
 The second argument is the name of the sequence length file.
 
-Thus, with the provided example files, we type:
+Thus, with the provided example files provided in the present repository, we would type:
 
 ```
 trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
