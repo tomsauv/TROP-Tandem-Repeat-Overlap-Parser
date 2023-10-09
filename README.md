@@ -58,7 +58,7 @@ There are a number of ways this can be done, for instance, you could use the ```
 awk '/^>/{if (l!="") print l; print; l=0; next}{l+=length($0)}END{print l}' NA_all.fasta | cut -d ' ' -f 1 | paste - - | sed -r 's/^>//g' > NA_all_tabulated_lengths.txt
 ```
 
-Note that here, we split the nanopore sequence very long titles to only keep the main identifier and output a file named ```NA_all_tabulated_lengths.txt```. 
+Note that here, we split the nanopore sequence very long titles to only keep the main identifier and we output a file named ```NA_all_tabulated_lengths.txt```. 
 
 The resulting tabulated file format is as below. The first column is the sequence name, the second column is the sequence length in bp.
 
@@ -79,7 +79,7 @@ a9fc5d29-acd8-4858-81c0-5cf6434708c0	894
 ```
 setwd("C:/Users/tomsauv/my_R_analyses")
 ``` 
-Place all files necessary in this folder on your computer (above is an example, adjust to the folder path on your computer)
+Place all files necessary in this working directory folder on your computer (above is an example, adjust to the folder path and name on your computer)
 
 **2) Load the ```data.table```  R package (install it prior)**
 ```
@@ -97,6 +97,7 @@ The first argument is the ```.dat``` file.
 
 The second argument is the name of the sequence length file.
 
+Thus with the provided example files, we type:
 
 ```
 trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
