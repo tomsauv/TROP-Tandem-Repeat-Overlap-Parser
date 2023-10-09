@@ -52,17 +52,15 @@ Please visit ```trf```'s github repository for further information on ```trf``` 
 
 **2) Preparing a tabulated sequence length file**
 
-There are a number of ways this can be done, for instance, you could use the ```awk``` command below (one-liner) on linux platform from the raw nanopore reads in ```fasta```:
+There are a number of ways this can be done, for instance, you could use the ```awk``` command below (one-liner) on linux platform from the raw nanopore reads in ```fasta``` (below as ```NA_all.fasta```, file not provided):
 
 ```
 awk '/^>/{if (l!="") print l; print; l=0; next}{l+=length($0)}END{print l}' NA_all.fasta | cut -d ' ' -f 1 | paste - - | sed -r 's/^>//g' > NA_all_tabulated_lengths.txt
 ```
 
-Note that here, we split the nanopore sequence title to only keep the main identifier. 
+Note that here, we split the nanopore sequence very long titles to only keep the main identifier and output a file named ```NA_all_tabulated_lengths.txt```. 
 
-The resulting tabulated file (named above ```NA_all_tabulated_lengths.txt```) format is as below.
-
-The first column is the sequence name, the second column is the sequence length in bp.
+The resulting tabulated file format is as below. The first column is the sequence name, the second column is the sequence length in bp.
 
 ```
 80800063-c64b-4493-a80c-6e2c6bfbe01a	823
