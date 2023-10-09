@@ -1,7 +1,7 @@
 
 # TROP : Tandem Repeat Overlap Parser
 
-# Why this script
+# Why this script?
 
 ```trop``` was thought about after artifactual sequences made entirely of tandem repeats were observed in nanopore sequencing (Sauvage et al. 2023). In seeking to characterize and quantify this sequencing noise, we used a classic tool known as Tandem Repeats Finder (```trf```, Benson 1999).
 
