@@ -103,8 +103,13 @@ Thus, with the provided example files provided in the present repository, we wou
 trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 ```
 
-**OUTPUT**
+# File output
 
+x
+
+y
+
+z
 
 # How to cite TROP
 
