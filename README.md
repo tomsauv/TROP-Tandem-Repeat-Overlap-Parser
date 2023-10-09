@@ -18,9 +18,9 @@ The problem is that ```trf``` reports multiple overlapping tandem boundaries for
 
 For the present tutorial, ```trf``` was run with the following options on a ```fasta``` file of R9.4 nanopore reads (```NA_all.fasta```, not provided)
 
-```trf NA_all.fasta 2 5 7 80 10 50 2000```, which produces ```NA_all.fasta.2.5.7.80.10.50.2000.dat```.
+```trf NA_all.fasta 2 5 7 80 10 50 2000```, which produces ```NA_all.fasta.2.5.7.80.10.50.2000.dat```
 
-If you open this provided example file in a simple text editor, results sequences by sequences look as below:
+If you open this provided example file in a simple text editor, results are displayed sequences by sequences as shown below:
 
 ```
 Tandem Repeats Finder Program written by:
