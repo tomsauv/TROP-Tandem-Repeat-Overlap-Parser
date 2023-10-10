@@ -7,11 +7,11 @@
 
 The problem is that ```trf``` reports multiple overlapping tandem boundaries for a given repetitive region, which is due to the imperfect nature of repetitive DNA (added to sequencing errors...) and the period of the detected repetitive motif (linked to ```trf``` parameters).
 
-**Thus, ```trop``` parses the lowest and highest boundary of a repetitive region to better characterise overall tandem content along a read (output and location)**
+**Thus, ```trop``` parses the lowest and highest boundary of a repetitive region to report the location of tandem region along a read and overall tandem repeat output**
 
 ![Screenshot](fig/trop_scheme.png)
 
-```trop``` can parse the output ```trf``` produces for any ```fasta``` file it will accept and find tandem for. However, here, we are more interested in long sequence reads (nanopore, pacbio) or even assembled contigs
+```trop``` can parse the output ```trf``` produces from any ```fasta``` file containing tandem. However, here, we are more focussed on long raw sequence reads (nanopore, pacbio) or even assembled contigs
 
 # Prerequisites
 **1) Running ```trf``` to produce a ```.dat``` file**
