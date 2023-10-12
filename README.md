@@ -97,7 +97,7 @@ The first argument is the ```.dat``` file.
 
 The second argument is the name of the sequence length file.
 
-Thus, with the provided example files provided in the present repository, we would type:
+Thus, with the provided example files, we would type:
 
 ```
 trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
@@ -105,13 +105,17 @@ trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 
 # File output
 
-x
-
-y
-
-z
-
-# How to cite TROP
+trop produces three output file:
+```
+1_tandem_length_per_reads.txt
+```
+```
+2_tandem_locations_per_read.txt
+```
+```
+3_tandem_output_summary.txt
+```
+# How to cite this script
 
 Sauvage T, Cormic A, Passerini D. A comparison of Oxford nanopore library strategies for bacterial genomics. BMC Genomics. 2023 xxxxxxxxxx
 
@@ -123,8 +127,3 @@ Sauvage T. TROP : Tandem Repeat Overlap Parser. https://github.com/tomsauv/TROP-
 
 Benson G. Tandem Repeats Finder: a program to analyze DNA sequences. Nucleic Acids Res. 1999; 27(2):573–580. doi:10.1093/nar/27.2.573
 
-# Comment
-
-speed etc....perl
-from a nanopore flongle run, small file provided
-memory, made to use less memory
