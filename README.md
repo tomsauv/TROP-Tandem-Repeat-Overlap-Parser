@@ -108,6 +108,7 @@ trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 trop produces three output file:
 
 ```1_tandem_length_per_reads.txt```
+
 This file reports the total tandem length detected per read (one entry per read)
 ```
 seqname trgroup trlength seqlength trprop
@@ -122,7 +123,9 @@ seqname trgroup trlength seqlength trprop
 ...
 ```
 
-```2_tandem_locations_per_read.txt```, which reports the location of each tandem region, thus multiple entries per read may occur.
+```2_tandem_locations_per_read.txt```
+
+This file reports the location of each tandem region, thus multiple entries per read may occur.
 
 The tandem location is reported for both of the 5' edge (positive values) and 3' edge (as negative values) for plotting purposes (SEE TUTO PDF).   
 
@@ -139,7 +142,9 @@ seqname trgroup start_5prime stop_5prime trlength seqlength trprop start_3prime 
 0010bd89-2875-4da9-ac68-630723a64513 2 454 627 173 688 25.15 -62 -235
 ```
 
-```3_tandem_output_summary.txt```, which reports the number of sequences containing detected tandem and and overall tandem bp.
+```3_tandem_output_summary.txt```
+
+This file reports the number of sequences containing detected tandem and and overall tandem bp.
 
 Proportions are also computed. e.g. below ~48% of sequences contained tandem. The detected tandem length representied >12% of total base pairs. 
 ```
@@ -151,15 +156,15 @@ total 23284 100 36182432 100
 
 Fields meaning for the three files are as follows:
 
-seqname: sequence name
+**seqname**: sequence name
 
-trgroup: 
+**trgroup**: 
 
-trlength: 
+**trlength**: 
 
-seqlength: 
+**seqlength**: 
 
-trprop:
+**trprop**:
 
 start_5prime: 
 
