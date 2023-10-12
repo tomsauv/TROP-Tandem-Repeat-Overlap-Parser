@@ -166,21 +166,21 @@ Fields meaning for the three files are as follows:
 
 **trprop**:
 
-start_5prime: 
+**start_5prime**: 
 
-stop_5prime:
+**stop_5prime**:
 
-start_3prime: 
+**start_3prime**: 
 
-stop_3prime:
+**stop_3prime**:
 
-nseq: number of sequences/contigs
+**nseq**: number of sequences/contigs
 
-nseq_perc: percentage of sequences/contigs
+**nseq_perc**: percentage of sequences/contigs
 
-bp: total base pairs counted
+**bp**: total base pairs counted
 
-bp_perc: percentage of total base pairs counted
+**bp_perc**: percentage of total base pairs counted
 
 
 
