@@ -112,14 +112,14 @@ trop produces three output file:
 This file reports the total tandem length detected per read (one entry per read)
 ```
 seqname trgroup trlength seqlength trprop
-000329bc-d1c5-41e0-b788-33edb403e025 0 0 526 0
-00058de9-6fa2-4997-8dcc-f127fb4919fd 0 0 2372 0
-0005c83e-0e71-43e0-b1fc-7e76513ba182 0 0 647 0
-000aadcb-5592-4c2f-ac6f-58cc38db29b9 0 0 3465 0
-000ab28b-db24-4ee5-83d2-10d8fcd7a5e4 1 250 484 51.65
-000ceda9-b66a-430c-9d0e-213c598e62c2 1 297 1793 16.56
-000f9e01-abbb-4e97-99e1-2b7ef8cd862c 0 0 1739 0
-0010bd89-2875-4da9-ac68-630723a64513 2 519 688 75.44
+ffca2289-5365-42e2-9474-0443943c14c3 1 153 557 27.47
+ffcb3273-02ff-463a-9748-87067e73c33b 0 0 213 0
+ffd00425-4921-41c7-bad9-d283a8ddb9ec 0 0 2704 0
+ffd2ebb1-f0bd-43ec-9f64-be4d31b88c49 0 0 1545 0
+ffd3cc81-79e6-483e-91b9-9286d69a9ef1 2 123 4182 2.94
+ffd3e82e-47ce-4daa-b79a-9ce77c05f679 1 56 244 22.95
+ffd7e1ec-6e9e-4437-a20b-84e9ea4be872 1 261 2549 10.24
+ffd907b5-aec6-4a16-86d0-5304e2f92dd7 5 623 1108 56.23
 ...
 ```
 
@@ -131,15 +131,19 @@ The tandem location is reported for both of the 5' edge (positive values) and 3'
 
 ```
 seqname trgroup start_5prime stop_5prime trlength seqlength trprop start_3prime stop_3prime
-000329bc-d1c5-41e0-b788-33edb403e025 0 0 0 0 526 0 0 0
-00058de9-6fa2-4997-8dcc-f127fb4919fd 0 0 0 0 2372 0 0 0
-0005c83e-0e71-43e0-b1fc-7e76513ba182 0 0 0 0 647 0 0 0
-000aadcb-5592-4c2f-ac6f-58cc38db29b9 0 0 0 0 3465 0 0 0
-000ab28b-db24-4ee5-83d2-10d8fcd7a5e4 1 192 442 250 484 51.65 -43 -293
-000ceda9-b66a-430c-9d0e-213c598e62c2 1 1445 1742 297 1793 16.56 -52 -349
-000f9e01-abbb-4e97-99e1-2b7ef8cd862c 0 0 0 0 1739 0 0 0
-0010bd89-2875-4da9-ac68-630723a64513 1 29 375 346 688 50.29 -314 -660
-0010bd89-2875-4da9-ac68-630723a64513 2 454 627 173 688 25.15 -62 -235
+ffca2289-5365-42e2-9474-0443943c14c3 1 322 475 153 557 27.47 -83 -236
+ffcb3273-02ff-463a-9748-87067e73c33b 0 0 0 0 213 0 0 0
+ffd00425-4921-41c7-bad9-d283a8ddb9ec 0 0 0 0 2704 0 0 0
+ffd2ebb1-f0bd-43ec-9f64-be4d31b88c49 0 0 0 0 1545 0 0 0
+ffd3cc81-79e6-483e-91b9-9286d69a9ef1 1 31 124 93 4182 2.22 -4059 -4152
+ffd3cc81-79e6-483e-91b9-9286d69a9ef1 2 148 178 30 4182 0.72 -4005 -4035
+ffd3e82e-47ce-4daa-b79a-9ce77c05f679 1 28 84 56 244 22.95 -161 -217
+ffd7e1ec-6e9e-4437-a20b-84e9ea4be872 1 17 278 261 2549 10.24 -2272 -2533
+ffd907b5-aec6-4a16-86d0-5304e2f92dd7 1 26 377 351 1108 31.68 -732 -1083
+ffd907b5-aec6-4a16-86d0-5304e2f92dd7 2 582 627 45 1108 4.06 -482 -527
+ffd907b5-aec6-4a16-86d0-5304e2f92dd7 3 694 722 28 1108 2.53 -387 -415
+ffd907b5-aec6-4a16-86d0-5304e2f92dd7 4 817 973 156 1108 14.08 -136 -292
+ffd907b5-aec6-4a16-86d0-5304e2f92dd7 5 1010 1053 43 1108 3.88 -56 -99
 ```
 
 ```3_tandem_output_summary.txt```
@@ -158,7 +162,7 @@ Fields meaning for the three files are as follows:
 
 **seqname**: sequence name
 
-**trgroup**: non-overlapping tandem within the reported tandem repeat region 
+**trgroup**: tandem region identifier in a sequence read/contig read (as increasing counts, e.g. region 1, 2, 3, etc)
 
 **trlength**: length of the reported tandem repeat region 
 
@@ -181,10 +185,6 @@ Fields meaning for the three files are as follows:
 **bp**: total base pairs for non-tandem or tandem repeat region
 
 **bp_perc**: percentage of total base pairs counted for non-tandem and tandem repeat region
-
-
-
-
 
 
 # How to cite this script
