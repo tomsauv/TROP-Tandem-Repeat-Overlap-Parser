@@ -158,29 +158,29 @@ Fields meaning for the three files are as follows:
 
 **seqname**: sequence name
 
-**trgroup**: 
+**trgroup**: non-overlapping tandem within the reported tandem repeat region 
 
-**trlength**: 
+**trlength**: length of the reported tandem repeat region 
 
-**seqlength**: 
+**seqlength**: length of the sequence read/contig
 
-**trprop**:
+**trprop**: tandem repeat region proportion as compared to the read/contig total length
 
-**start_5prime**: 
+**start_5prime**: starting location of the tandem repeat region measured from the 5' edge
 
-**stop_5prime**:
+**stop_5prime**: stopping location of the tandem repeat region measured from the 5' edge
 
-**start_3prime**: 
+**start_3prime**: starting location of the tandem repeat region measured from the 3' edge (reported as a negative value)
 
-**stop_3prime**:
+**stop_3prime**: stopping location of the tandem repeat region measured from the 3' edge (reported as a negative value)
 
-**nseq**: number of sequences/contigs
+**nseq**: number of sequence reads/contigs
 
-**nseq_perc**: percentage of sequences/contigs
+**nseq_perc**: percentage of sequence reads/contigs
 
-**bp**: total base pairs counted
+**bp**: total base pairs for non-tandem or tandem repeat region
 
-**bp_perc**: percentage of total base pairs counted
+**bp_perc**: percentage of total base pairs counted for non-tandem and tandem repeat region
 
 
 
