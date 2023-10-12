@@ -107,7 +107,7 @@ trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 
 trop produces three output file:
 
-```1_tandem_length_per_reads.txt```
+```1_tandem_length_per_reads.txt```, which reports the total tandem length detected per read (one entry per read)
 ```
 seqname trgroup trlength seqlength trprop
 000329bc-d1c5-41e0-b788-33edb403e025 0 0 526 0
@@ -121,7 +121,9 @@ seqname trgroup trlength seqlength trprop
 ...
 ```
 
-```2_tandem_locations_per_read.txt```
+```2_tandem_locations_per_read.txt```, which reports the location of each tandem region, thus multiple entries per read may occur 
+The tandem location is reported for both of the 5' edge (positive values) and 3' edge (as negative values) for plotting purposes (SEE TUTO PDF).   
+
 ```
 seqname trgroup start_5prime stop_5prime trlength seqlength trprop start_3prime stop_3prime
 000329bc-d1c5-41e0-b788-33edb403e025 0 0 0 0 526 0 0 0
@@ -135,13 +137,34 @@ seqname trgroup start_5prime stop_5prime trlength seqlength trprop start_3prime 
 0010bd89-2875-4da9-ac68-630723a64513 2 454 627 173 688 25.15 -62 -235
 ```
 
-```3_tandem_output_summary.txt```
+```3_tandem_output_summary.txt```, which reports the number of sequences containing detected tandem and and overall tandem bp
+Proportions are also computed. e.g. below ~48% of sequences contained tandem. The detected tandem length representied >12% of total base pairs. 
 ```
 class nseq nseq_perc bp bp_perc
 no_tandem 12099 51.96 31589056 87.3
 tandem 11185 48.04 4593376 12.7
 total 23284 100 36182432 100
 ```
+
+Fields meaning for the three files are as follows:
+seqname: sequence name
+trgroup: 
+trlength: 
+seqlength: 
+trprop:
+start_5prime: 
+stop_5prime:
+start_3prime: 
+stop_3prime:
+nseq: number of sequences/contigs
+nseq_perc: percentage of sequences/contigs
+bp: total base pairs counted
+bp_perc: percentage of total base pairs counted
+
+
+
+
+
 
 # How to cite this script
 
