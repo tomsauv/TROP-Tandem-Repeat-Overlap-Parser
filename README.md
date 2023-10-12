@@ -121,7 +121,8 @@ seqname trgroup trlength seqlength trprop
 ...
 ```
 
-```2_tandem_locations_per_read.txt```, which reports the location of each tandem region, thus multiple entries per read may occur 
+```2_tandem_locations_per_read.txt```, which reports the location of each tandem region, thus multiple entries per read may occur.
+
 The tandem location is reported for both of the 5' edge (positive values) and 3' edge (as negative values) for plotting purposes (SEE TUTO PDF).   
 
 ```
@@ -137,7 +138,8 @@ seqname trgroup start_5prime stop_5prime trlength seqlength trprop start_3prime 
 0010bd89-2875-4da9-ac68-630723a64513 2 454 627 173 688 25.15 -62 -235
 ```
 
-```3_tandem_output_summary.txt```, which reports the number of sequences containing detected tandem and and overall tandem bp
+```3_tandem_output_summary.txt```, which reports the number of sequences containing detected tandem and and overall tandem bp.
+
 Proportions are also computed. e.g. below ~48% of sequences contained tandem. The detected tandem length representied >12% of total base pairs. 
 ```
 class nseq nseq_perc bp bp_perc
