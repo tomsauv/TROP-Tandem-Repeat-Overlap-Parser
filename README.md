@@ -107,7 +107,8 @@ trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 
 trop produces three output file:
 
-```1_tandem_length_per_reads.txt```, which reports the total tandem length detected per read (one entry per read)
+```1_tandem_length_per_reads.txt```
+This file reports the total tandem length detected per read (one entry per read)
 ```
 seqname trgroup trlength seqlength trprop
 000329bc-d1c5-41e0-b788-33edb403e025 0 0 526 0
