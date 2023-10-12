@@ -106,9 +106,21 @@ trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 # File output
 
 trop produces three output file:
+
+```1_tandem_length_per_reads.txt```
 ```
-1_tandem_length_per_reads.txt
+seqname trgroup trlength seqlength trprop
+000329bc-d1c5-41e0-b788-33edb403e025 0 0 526 0
+00058de9-6fa2-4997-8dcc-f127fb4919fd 0 0 2372 0
+0005c83e-0e71-43e0-b1fc-7e76513ba182 0 0 647 0
+000aadcb-5592-4c2f-ac6f-58cc38db29b9 0 0 3465 0
+000ab28b-db24-4ee5-83d2-10d8fcd7a5e4 1 250 484 51.65
+000ceda9-b66a-430c-9d0e-213c598e62c2 1 297 1793 16.56
+000f9e01-abbb-4e97-99e1-2b7ef8cd862c 0 0 1739 0
+0010bd89-2875-4da9-ac68-630723a64513 2 519 688 75.44
+...
 ```
+
 ```
 2_tandem_locations_per_read.txt
 ```
