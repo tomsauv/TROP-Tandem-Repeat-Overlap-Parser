@@ -127,7 +127,7 @@ ffd907b5-aec6-4a16-86d0-5304e2f92dd7 5 623 1108 56.23
 
 This file reports the location of each tandem region, thus multiple entries per read may occur.
 
-The tandem location is reported for both of the 5' edge (positive values) and 3' edge (as negative values) for plotting purposes (SEE TUTO PDF).   
+The tandem location is reported for both of the 5' edge (positive values) and 3' edge (as negative values) for plotting purposes (SEE TUTO PDF/WIKI).   
 
 ```
 seqname trgroup start_5prime stop_5prime trlength seqlength trprop start_3prime stop_3prime
