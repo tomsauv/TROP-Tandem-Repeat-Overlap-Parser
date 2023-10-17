@@ -189,7 +189,7 @@ Fields meaning for the three files are as follows:
 
 # How to cite this script
 
-Sauvage T, Cormic A, Passerini D. A comparison of Oxford nanopore library strategies for bacterial genomics. BMC Genomics. 2023 xxxxxxxxxx
+Sauvage T, Cormic A, Passerini D. A comparison of Oxford nanopore library strategies for bacterial genomics. BMC Genomics. 2023 [xxxxxxxxxx](https://doi.org/10.1186/s12864-023-09729-z)
 
 or directly
 
