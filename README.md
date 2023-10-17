@@ -197,5 +197,5 @@ Sauvage T. TROP : Tandem Repeat Overlap Parser. https://github.com/tomsauv/TROP-
 
 # Additional references
 
-Benson G. Tandem Repeats Finder: a program to analyze DNA sequences. Nucleic Acids Res. 1999; 27(2):573–580. doi:10.1093/nar/27.2.573
+Benson G (1999) **Tandem Repeats Finder: a program to analyze DNA sequences**. _Nucleic Acids Research_ 27(2):573–580 [doi:10.1093/nar/27.2.573](https://doi.org/10.1093/nar/27.2.573)
 
