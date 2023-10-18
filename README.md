@@ -150,7 +150,7 @@ ffd907b5-aec6-4a16-86d0-5304e2f92dd7 5 1010 1053 43 1108 3.88 -56 -99
 
 ```3_tandem_output_summary.txt```
 
-This file reports the number of sequences containing detected tandem and overall tandem bp. Proportions are also computed:
+This file reports the number of sequences containing detected tandem and overall tandem bp. Proportions are also computed.
 
 e.g. below ~48% of sequences contained tandems and the detected tandem length representied >12% of total base pairs. 
 ```
