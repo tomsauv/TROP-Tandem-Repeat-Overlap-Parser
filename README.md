@@ -127,7 +127,7 @@ ffd907b5-aec6-4a16-86d0-5304e2f92dd7 5 623 1108 56.23
 
 This file reports the location of each tandem region, thus multiple entries per read may occur.
 
-The tandem location is reported for both of the 5' edge (positive values) and 3' edge (as negative values) for plotting purposes (SEE TUTO PDF/WIKI).   
+The tandem location is reported for both of the 5' edge (positive values) and 3' edge (as negative values) for plotting purposes.   
 
 ```
 seqname trgroup start_5prime stop_5prime trlength seqlength trprop start_3prime stop_3prime
@@ -148,7 +148,7 @@ ffd907b5-aec6-4a16-86d0-5304e2f92dd7 5 1010 1053 43 1108 3.88 -56 -99
 
 ```3_tandem_output_summary.txt```
 
-This file reports the number of sequences containing detected tandem and and overall tandem bp. Proportions are also computed:
+This file reports the number of sequences containing detected tandem and overall tandem bp. Proportions are also computed:
 
 e.g. below ~48% of sequences contained tandems and the detected tandem length representied >12% of total base pairs. 
 ```
