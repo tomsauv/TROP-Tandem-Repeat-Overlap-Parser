@@ -72,6 +72,8 @@ a9fc5d29-acd8-4858-81c0-5cf6434708c0	894
 7a5fe376-fa8b-4552-8803-04015cab89bd	2961
 ...
 ```
+This format is important to match that of sequence names after parsing of the ```.dat``` file.  
+
 
 # Running TROP
 
