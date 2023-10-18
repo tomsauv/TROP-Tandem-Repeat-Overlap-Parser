@@ -195,7 +195,9 @@ Sauvage T, Cormic A, Passerini D (2023) **A comparison of Oxford nanopore librar
 
 or directly (after changing the date you accessed this repository
 
-Sauvage T. **TROP : Tandem Repeat Overlap Parser**. https://github.com/tomsauv/TROP-Tandem-Repeat-Overlap-Parser. Accessed October 18, 2023. [![DOI](https://zenodo.org/badge/651004665.svg)](https://zenodo.org/doi/10.5281/zenodo.10019937)
+Sauvage T. **TROP : Tandem Repeat Overlap Parser**. https://github.com/tomsauv/TROP-Tandem-Repeat-Overlap-Parser. Accessed October 18, 2023. [DOI:10.5281/zenodo.10019937](https://zenodo.org/doi/10.5281/zenodo.10019937).
+
+[![DOI](https://zenodo.org/badge/651004665.svg)](https://zenodo.org/doi/10.5281/zenodo.10019937)
 
 # Additional references
 
