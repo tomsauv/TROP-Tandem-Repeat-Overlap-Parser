@@ -193,7 +193,7 @@ Sauvage T, Cormic A, Passerini D (2023) **A comparison of Oxford nanopore librar
 
 or directly
 
-Sauvage T. TROP : Tandem Repeat Overlap Parser. https://github.com/tomsauv/TROP-Tandem-Repeat-Overlap-Parser. Accessed September XX, 2023. DOI XXXXXXXXXXXXXXXXXXX
+Sauvage T. **TROP : Tandem Repeat Overlap Parser**. https://github.com/tomsauv/TROP-Tandem-Repeat-Overlap-Parser. Accessed September XX, 2023. DOI XXXXXXXXXXXXXXXXXXX
 
 # Additional references
 
