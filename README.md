@@ -105,7 +105,7 @@ trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
 
 # File output
 
-trop produces three output file:
+```trop``` produces three output file:
 
 ```1_tandem_length_per_reads.txt```
 
