@@ -88,7 +88,7 @@ require(data.table)
 
 **3) Load the script (after you download it from this repository and place it your working directory)**
 ```
-source("TROP_v6.r")
+source("trop_v6.r")
 ```
 
 **4) Run the script by filling the name of files to be parsed as below**
