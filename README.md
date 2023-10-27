@@ -192,13 +192,15 @@ Fields meaning for the three files are as follows:
 
 Aside from using this script to describe artifactual tandem content in bacterial nanopore data (see Figs and Tables in Sauvage et al. 2023), you could:
 
--Develop the script further to merge tandems separated by short distances (e.g. by less than 100bp? the merge distance would have to be determined emprirically from the data)
+-Use File 1 to filter out high tandem reads from raw fasta sequence prior to assembly (e.g. identify read labels with trprop 80% or more and exclude them).
 
--Use File 1 to filter out high tandem reads from raw fasta sequence prior to assembly (e.g. identify read labels with trprop > 80%(?) and exclude them).
+-Develop the script further to merge tandems separated by short distances (e.g. perhaps merge distance <100 bp, the best distance would have to be determined emprirically by using File 3)
 
 -Create a tandem trimmer based on locations reported in File 3 (e.g. trim the 5' and 3' artifactual tandem edges prior to assembly). 
 
-All of the above may save some assembly time; however TRF also requires computing time, so it's a trade off...Nonetheless it is possible that assembly quality benefits from removing artifactual tandems prior and remains to be investigated/documented.
+Note that TRF can output a fasta file in which all detected tandems are masked as NNNNs. If an assembler could accept such files and use that information to trim or correct sequences accordingly, it could be interesting. 
+
+All of the above ideas may save some assembly time and perhaps improve assembly quality; however TRF requires computing time, so it's a trade off...This remains to be investigated/documented.
 
 # How to cite this script
 
