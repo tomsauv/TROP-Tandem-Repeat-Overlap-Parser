@@ -194,7 +194,7 @@ Aside from using this script to describe tandem content (see Figs and Tables in 
 
 -Develop the script further to merge tandems separated by short distances (e.g. perhaps merge tandem separated by <100 bp, the best distance would have to be determined emprirically by using File 3). Such short distances may result from tandem detection issues or parameters.
 
--Create a tandem trimmer based on locations reported in File 3 (e.g. trim the 5' and 3' tandem edges prior to assembly). Tandems found on edges of reads probably have little value for assembly.
+-Create a tandem trimmer based on locations reported in File 3 (e.g. trim the 5' and 3' tandem edges of reads prior to assembly). Tandems found on edges of reads probably have little value for assembly.
 
 -Use File 1 to filter out high tandem reads from raw fasta sequence prior to assembly (e.g. identify read labels with trprop 80-90% and exclude them from sequence files).
 
