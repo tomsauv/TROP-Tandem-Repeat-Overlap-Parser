@@ -188,6 +188,14 @@ Fields meaning for the three files are as follows:
 
 **bp_perc**: percentage of total base pairs counted for non-tandem and tandem repeat region
 
+# Ideas
+
+Aside from using this script to describe tandem content (see Figs and Tables in Sauvage et al. 2023), you could:
+
+Use File 1 to filter high tandem reads from raw sequence file (e.g. identify reads with trprop > 70% and exclude them for assembly)
+Create a tandem trimmer based on locations reported in File 3 (e.g. trim sequences' 5' and 3' edges prior to assembly)
+
+
 
 # How to cite this script
 
