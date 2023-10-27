@@ -190,17 +190,15 @@ Fields meaning for the three files are as follows:
 
 # Ideas
 
-Aside from using this script to describe artifactual tandem content in bacterial nanopore data (see Figs and Tables in Sauvage et al. 2023), you could:
+Aside from using this script to describe tandem content (see Figs and Tables in Sauvage et al. 2023), you could:
 
--Use File 1 to filter out high tandem reads from raw fasta sequence prior to assembly (e.g. identify read labels with trprop 80% or more and exclude them from sequence files).
+-Develop the script further to merge tandems separated by short distances (e.g. perhaps merge tandem separated by <100 bp, the best distance would have to be determined emprirically by using File 3). Such short distances may result from tandem detection issues or parameters.
 
--Develop the script further to merge tandems separated by short distances (e.g. perhaps merge distance <100 bp, the best distance would have to be determined emprirically by using File 3). such short distance may result from tandem detection issues or parameters.
+-Create a tandem trimmer based on locations reported in File 3 (e.g. trim the 5' and 3' tandem edges prior to assembly). Tandems found on edges of reads probably have little value for assembly.
 
--Create a tandem trimmer based on locations reported in File 3 (e.g. trim the 5' and 3' artifactual tandem edges prior to assembly). 
+-Use File 1 to filter out high tandem reads from raw fasta sequence prior to assembly (e.g. identify read labels with trprop 80-90% and exclude them from sequence files).
 
-All of the above ideas may save some assembly time and perhaps improve assembly quality; however TRF requires computing time, so it's a trade off...This remains to be investigated/documented.
-
-Finally, note that TRF can output a fasta file in which all detected tandems are masked as NNNNs on each read. If an assembler could accept such files and use that information to trim or correct sequences accordingly, it could be interesting. 
+Finally, note that ```trf``` can output a ```fasta``` file in which all detected tandems are masked as NNNNs (on each read). If an assembler could accept such files and use that information to trim or correct sequences accordingly, it could be interesting.
 
 # How to cite this script
 
