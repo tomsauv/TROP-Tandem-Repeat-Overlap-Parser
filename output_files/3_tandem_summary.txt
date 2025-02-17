@@ -1,0 +1,4 @@
+class	nseq	nseq_perc	bp	bp_perc
+No_Tandem	12099	51.96	31589056	87.30
+Tandem	11185	48.04	4593376	12.70
+Total	23284	100.00	36182432	100.00
