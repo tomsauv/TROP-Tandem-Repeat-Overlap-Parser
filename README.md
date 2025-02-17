@@ -11,7 +11,9 @@ The problem is that ```trf``` reports multiple overlapping tandem boundaries for
 
 ![Screenshot](fig/trop_scheme.png)
 
-```trop``` can parse the output of ```trf``` that is produced from any ```fasta``` file containing tandem. However, here, we are more focussed on long raw sequence reads (nanopore, pacbio) or even assembled contigs
+```trop``` can parse the output of ```trf``` that is produced from any ```fasta``` file containing tandem. However, here, we are more focussed on long raw sequence reads (nanopore, pacbio) or even assembled contigs.
+
+```trop``` was initially written in R but rewritten in perl for efficiency and compatibility.  
 
 # Prerequisites
 **1) Running ```trf``` to produce a ```.dat``` file**
