@@ -86,7 +86,7 @@ Indicate the directory where you placed the above files (or drag and drop the di
 ```
 cd C:/Users/tomsauv/my_analyses
 ```
-Run the following command:
+Run the following command with the example files:
 ```
 perl trop_v7.pl NA_all.fasta.2.5.7.80.10.50.2000.dat NA_all_tabulated_lengths.txt
 ```
@@ -114,7 +114,7 @@ seqname	trgroup	trlength	seqlength	trprop	start_5prime	stop_5prime	start_3prime	
 0018a571-bd9c-4cce-9caf-267c782a4a49	5	895	2228	40.17	1320	2215	-14	-909
 ...
 ```
-```2_tandem_locations_per_read.txt```
+```2_tandem_per_read.txt```
 
 This file reports the total tandem regions per read (single entry per read)
 ```
@@ -125,9 +125,7 @@ seqname	ntrgroup	trlength	seqlength	trprop
 0018a571-bd9c-4cce-9caf-267c782a4a49	5	1852	2228	83.12
 ...
 ```
-
-
-```3_tandem_output_summary.txt```
+```3_tandem_summary.txt```
 
 This file reports the number of sequences containing detected tandem and overall tandem bp. Proportions are also computed.
 
