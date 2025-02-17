@@ -164,7 +164,9 @@ Fields meaning for the three files are as follows:
 
 **seqname**: sequence name
 
-**trgroup**: tandem region identifier in a sequence read/contig read (as increasing counts, e.g. region 1, 2, 3, etc)
+**trgroup**: non-overlapping tandem region identifier in a sequence read/contig read (as increasing counts, e.g. region 1, 2, 3, etc)
+
+**ntrgroup**: total number of non-overlapping tandem region in a sequence read/contig read
 
 **trlength**: length of the reported tandem repeat region 
 
