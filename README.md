@@ -131,7 +131,7 @@ seqname	ntrgroup	trlength	seqlength	trprop
 
 This file reports the number of sequences containing detected tandem and overall tandem bp. Proportions are also computed.
 
-e.g. below ~48% of sequences contained tandems and the detected tandem length represented >12% of total base pairs. 
+e.g. below ~48% of sequences contained tandem and the detected tandem length represented >12% of total base pairs. 
 ```
 class	nseq	nseq_perc	bp	bp_perc
 No Tandem	12099	51.96	31589056	87.30
