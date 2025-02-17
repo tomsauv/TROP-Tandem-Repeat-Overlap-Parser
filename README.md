@@ -3,15 +3,15 @@
 
 # Why this script?
 
-```trop``` was thought about after artifactual sequences made entirely of tandem repeats were observed in nanopore sequencing (Sauvage et al. 2023). In seeking to characterize and quantify this sequencing noise, we used a classic tool known as Tandem Repeats Finder (```trf```, Benson 1999).
+```trop``` was written following observations of artifactual sequences made entirely of tandem repeats in nanopore sequences (Sauvage et al. 2023). In seeking to characterize and quantify this sequencing noise, we used a classic tool known as Tandem Repeats Finder (```trf```, Benson 1999).
 
-The problem is that ```trf``` reports multiple overlapping tandem boundaries for a given repetitive region, which is due to the imperfect nature of repetitive DNA and the period of the detected repetitive motif (linked to ```trf``` parameters).
+The problem is that ```trf``` reports multiple overlapping tandem boundaries for a given repetitive region. This is due to the imperfect nature of repetitive DNA and the period of the detected repetitive motif linked to ```trf``` parameters. Note that sequencing errors may also affect the detection of these boundaries. 
 
-**Thus, ```trop``` parses the lowest and highest boundary of a repetitive region to report the location of tandem region along a read and overall tandem repeat output**
+**Thus, ```trop``` parses the lowest and highest boundary of a repetitive region to report non-overlapping tandem**
 
 ![Screenshot](fig/trop_scheme.png)
 
-```trop``` can parse the output ```trf``` produces from any ```fasta``` file containing tandem. However, here, we are more focussed on long raw sequence reads (nanopore, pacbio) or even assembled contigs
+```trop``` can parse the output ```trf``` produced from any ```fasta``` file containing tandem. However, here, we are more focussed on long raw sequence reads (nanopore, pacbio) or even assembled contigs
 
 # Prerequisites
 **1) Running ```trf``` to produce a ```.dat``` file**
@@ -77,76 +77,54 @@ This format is important to match that of sequence names produced by the parsing
 
 # Running TROP
 
-**1) Open R and set your working directory**
-```
-setwd("C:/Users/tomsauv/my_R_analyses")
-``` 
-Place all files necessary in this working directory folder on your computer (above is an example, adjust to the folder path and name on your computer)
-
-**2) Load the ```data.table```  R package (install it prior)**
-```
-require(data.table)
-```
-
-**3) Load the script (after you download it from this repository and place it your working directory)**
-```
-source("trop_v6.r")
-```
-
-**4) Run the script by filling the name of files to be parsed as below**
-
-The first argument is the ```.dat``` file.
-
-The second argument is the name of the sequence length file.
-
-Thus, with the provided example files, we would type:
+Install perl version 5 or newer
+Open your terminal (on windows, macos or linux)
+Indicate the directory where you placed the above files
 
 ```
-trop("NA_all.fasta.2.5.7.80.10.50.2000.dat","NA_all_tabulated_lengths.txt")
+cd C:/Users/tomsauv/my_analyses
+```
+Run the following command:
+
+```
+perl trop_v7.pl NA_all.fasta.2.5.7.80.10.50.2000.dat NA_all_tabulated_lengths.txt
 ```
 
 # File output
 
 ```trop``` produces three output files:
 
-```1_tandem_length_per_reads.txt```
-
-This file reports the total tandem length detected per read (one entry per read)
-```
-seqname trgroup trlength seqlength trprop
-ffca2289-5365-42e2-9474-0443943c14c3 1 153 557 27.47
-ffcb3273-02ff-463a-9748-87067e73c33b 0 0 213 0
-ffd00425-4921-41c7-bad9-d283a8ddb9ec 0 0 2704 0
-ffd2ebb1-f0bd-43ec-9f64-be4d31b88c49 0 0 1545 0
-ffd3cc81-79e6-483e-91b9-9286d69a9ef1 2 123 4182 2.94
-ffd3e82e-47ce-4daa-b79a-9ce77c05f679 1 56 244 22.95
-ffd7e1ec-6e9e-4437-a20b-84e9ea4be872 1 261 2549 10.24
-ffd907b5-aec6-4a16-86d0-5304e2f92dd7 5 623 1108 56.23
-...
-```
-
-```2_tandem_locations_per_read.txt```
+```1_tandem_locations.txt```
 
 This file reports the location of each tandem region, thus multiple entries per read may occur.
 
 The tandem location is reported for both of the 5' edge (positive values) and 3' edge (as negative values) for plotting purposes.   
 
 ```
-seqname trgroup start_5prime stop_5prime trlength seqlength trprop start_3prime stop_3prime
-ffca2289-5365-42e2-9474-0443943c14c3 1 322 475 153 557 27.47 -83 -236
-ffcb3273-02ff-463a-9748-87067e73c33b 0 0 0 0 213 0 0 0
-ffd00425-4921-41c7-bad9-d283a8ddb9ec 0 0 0 0 2704 0 0 0
-ffd2ebb1-f0bd-43ec-9f64-be4d31b88c49 0 0 0 0 1545 0 0 0
-ffd3cc81-79e6-483e-91b9-9286d69a9ef1 1 31 124 93 4182 2.22 -4059 -4152
-ffd3cc81-79e6-483e-91b9-9286d69a9ef1 2 148 178 30 4182 0.72 -4005 -4035
-ffd3e82e-47ce-4daa-b79a-9ce77c05f679 1 28 84 56 244 22.95 -161 -217
-ffd7e1ec-6e9e-4437-a20b-84e9ea4be872 1 17 278 261 2549 10.24 -2272 -2533
-ffd907b5-aec6-4a16-86d0-5304e2f92dd7 1 26 377 351 1108 31.68 -732 -1083
-ffd907b5-aec6-4a16-86d0-5304e2f92dd7 2 582 627 45 1108 4.06 -482 -527
-ffd907b5-aec6-4a16-86d0-5304e2f92dd7 3 694 722 28 1108 2.53 -387 -415
-ffd907b5-aec6-4a16-86d0-5304e2f92dd7 4 817 973 156 1108 14.08 -136 -292
-ffd907b5-aec6-4a16-86d0-5304e2f92dd7 5 1010 1053 43 1108 3.88 -56 -99
+seqname	trgroup	trlength	seqlength	trprop	start_5prime	stop_5prime	start_3prime	stop_3prime
+000ab28b-db24-4ee5-83d2-10d8fcd7a5e4	1	250	484	51.65	192	442	-43	-293
+000ceda9-b66a-430c-9d0e-213c598e62c2	1	297	1793	16.56	1445	1742	-52	-349
+0010bd89-2875-4da9-ac68-630723a64513	1	346	688	50.29	29	375	-314	-660
+0010bd89-2875-4da9-ac68-630723a64513	2	173	688	25.15	454	627	-62	-235
+0018a571-bd9c-4cce-9caf-267c782a4a49	1	260	2228	11.67	31	291	-1938	-2198
+0018a571-bd9c-4cce-9caf-267c782a4a49	2	547	2228	24.55	330	877	-1352	-1899
+0018a571-bd9c-4cce-9caf-267c782a4a49	3	91	2228	4.08	978	1069	-1160	-1251
+0018a571-bd9c-4cce-9caf-267c782a4a49	4	59	2228	2.65	1108	1167	-1062	-1121
+0018a571-bd9c-4cce-9caf-267c782a4a49	5	895	2228	40.17	1320	2215	-14	-909
+...
 ```
+```2_tandem_locations_per_read.txt```
+
+This file reports the total tandem regions per read (single entry per read)
+```
+seqname	ntrgroup	trlength	seqlength	trprop
+000ab28b-db24-4ee5-83d2-10d8fcd7a5e4	1	250	484	51.65
+000ceda9-b66a-430c-9d0e-213c598e62c2	1	297	1793	16.56
+0010bd89-2875-4da9-ac68-630723a64513	2	519	688	75.44
+0018a571-bd9c-4cce-9caf-267c782a4a49	5	1852	2228	83.12
+...
+```
+
 
 ```3_tandem_output_summary.txt```
 
@@ -154,10 +132,10 @@ This file reports the number of sequences containing detected tandem and overall
 
 e.g. below ~48% of sequences contained tandems and the detected tandem length representied >12% of total base pairs. 
 ```
-class nseq nseq_perc bp bp_perc
-no_tandem 12099 51.96 31589056 87.3
-tandem 11185 48.04 4593376 12.7
-total 23284 100 36182432 100
+class	nseq	nseq_perc	bp	bp_perc
+No Tandem	12099	51.96	31589056	87.30
+Tandem	11185	48.04	4593376	12.70
+Total	23284	100.00	36182432	100.00
 ```
 
 Fields meaning for the three files are as follows:
