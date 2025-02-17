@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+use v5;
 use strict;
 use warnings;
 
@@ -60,11 +61,13 @@ foreach my $seq (keys %trf_data) {
     $merged_trf{$seq} = \@merged;
 }
 
-# Step 4: Export combined file (1_tandem_per_read.txt)
-open my $out1, '>', "1_tandem_per_read.txt" or die "Cannot write file\n";
+# Step 4: Export combined file (1_tandem_locations.txt)
+open my $out1, '>', "1_tandem_locations.txt" or die "Cannot write file\n";
 print $out1 "seqname\ttrgroup\ttrlength\tseqlength\ttrprop\tstart_5prime\tstop_5prime\tstart_3prime\tstop_3prime\n";
 
 my %tr_summary;
+my %aggregated_tr;
+
 foreach my $seq (sort keys %merged_trf) {
     my $seq_len = $seq_lengths{$seq} // 0;
     my $trgroup = 0;
@@ -81,6 +84,11 @@ foreach my $seq (sort keys %merged_trf) {
         my $tr_prop = $seq_len ? sprintf("%.2f", ($tr_length * 100) / $seq_len) : 0;
 
         print $out1 "$seq\t$trgroup\t$tr_length\t$seq_len\t$tr_prop\t$start\t$end\t$start_3prime\t$stop_3prime\n";
+
+        # Store for aggregated output
+        $aggregated_tr{$seq}{ntrgroup}++;
+        $aggregated_tr{$seq}{trlength} += $tr_length;
+        $aggregated_tr{$seq}{seqlength} = $seq_len;
     }
 
     $tr_summary{$seq} = { total => $total_trlength, trgroup => $trgroup };
@@ -88,9 +96,25 @@ foreach my $seq (sort keys %merged_trf) {
 close $out1;
 print "File 1 exported\n";
 
-# Step 5: Compute summary statistics (2_tandem_summary.txt)
-open my $out2, '>', "2_tandem_summary.txt" or die "Cannot write file\n";
-print $out2 "class\tnseq\tnseq_perc\tbp\tbp_perc\n";
+# Step 5: Export aggregated file (2_tandem_per_read.txt)
+open my $out2, '>', "2_tandem_per_read.txt" or die "Cannot write file\n";
+print $out2 "seqname\tntrgroup\ttrlength\tseqlength\ttrprop\n";
+
+foreach my $seq (sort keys %aggregated_tr) {
+    my $ntrgroup = $aggregated_tr{$seq}{ntrgroup};
+    my $trlength = $aggregated_tr{$seq}{trlength};
+    my $seqlength = $aggregated_tr{$seq}{seqlength};
+    my $trprop = $seqlength ? sprintf("%.2f", ($trlength * 100) / $seqlength) : 0;
+
+    print $out2 "$seq\t$ntrgroup\t$trlength\t$seqlength\t$trprop\n";
+}
+
+close $out2;
+print "File 2 exported\n";
+
+# Step 6: Compute summary statistics (3_tandem_summary.txt) - now last
+open my $out3, '>', "3_tandem_summary.txt" or die "Cannot write file\n";
+print $out3 "class\tnseq\tnseq_perc\tbp\tbp_perc\n";
 
 my $total_reads = scalar(keys %seq_lengths);
 my $total_bp = 0;
@@ -108,11 +132,10 @@ foreach my $seq (keys %seq_lengths) {
 my $no_tandem_reads = $total_reads - $tandem_reads;
 my $no_tandem_bp = $total_bp - $tandem_bp;
 
-print $out2 "No Tandem\t$no_tandem_reads\t", sprintf("%.2f", ($no_tandem_reads * 100) / $total_reads), "\t$no_tandem_bp\t", sprintf("%.2f", ($no_tandem_bp * 100) / $total_bp), "\n";
-print $out2 "Tandem\t$tandem_reads\t", sprintf("%.2f", ($tandem_reads * 100) / $total_reads), "\t$tandem_bp\t", sprintf("%.2f", ($tandem_bp * 100) / $total_bp), "\n";
-print $out2 "Total\t$total_reads\t100.00\t$total_bp\t100.00\n";
+print $out3 "No_Tandem\t$no_tandem_reads\t", sprintf("%.2f", ($no_tandem_reads * 100) / $total_reads), "\t$no_tandem_bp\t", sprintf("%.2f", ($no_tandem_bp * 100) / $total_bp), "\n";
+print $out3 "Tandem\t$tandem_reads\t", sprintf("%.2f", ($tandem_reads * 100) / $total_reads), "\t$tandem_bp\t", sprintf("%.2f", ($tandem_bp * 100) / $total_bp), "\n";
+print $out3 "Total\t$total_reads\t100.00\t$total_bp\t100.00\n";
 
-close $out2;
-print "File 2 exported\n";
+close $out3;
+print "File 3 exported\n";
 print "Processing completed.\n";
-
