@@ -77,15 +77,16 @@ This format is important to match that of sequence names produced by the parsing
 
 # Running TROP
 
-Install perl version 5 or newer
+Install ```perl``` version 5 or newer
+
 Open your terminal (on windows, macos or linux)
-Indicate the directory where you placed the above files
+
+Indicate the directory where you placed the above files (or drag and drop the directory to the terminal window, which will fill the path automatically)
 
 ```
 cd C:/Users/tomsauv/my_analyses
 ```
 Run the following command:
-
 ```
 perl trop_v7.pl NA_all.fasta.2.5.7.80.10.50.2000.dat NA_all_tabulated_lengths.txt
 ```
@@ -130,7 +131,7 @@ seqname	ntrgroup	trlength	seqlength	trprop
 
 This file reports the number of sequences containing detected tandem and overall tandem bp. Proportions are also computed.
 
-e.g. below ~48% of sequences contained tandems and the detected tandem length representied >12% of total base pairs. 
+e.g. below ~48% of sequences contained tandems and the detected tandem length represented >12% of total base pairs. 
 ```
 class	nseq	nseq_perc	bp	bp_perc
 No Tandem	12099	51.96	31589056	87.30
