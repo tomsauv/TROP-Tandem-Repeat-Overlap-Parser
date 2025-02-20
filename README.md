@@ -177,9 +177,8 @@ Aside from using this script to describe tandem content (see Figs and Tables in 
 
 -Create a tandem trimmer based on locations reported in File 3 (e.g. trim the 5' and 3' tandem edges of reads prior to assembly). Tandems found on edges of reads probably have little value for assembly.
 
--Use File 1 to filter out high tandem reads from raw fasta sequence prior to assembly (e.g. identify read labels with trprop 80-90% and exclude them from sequence files).
+-Use File #2 to filter out high tandem reads from raw fasta sequence prior to assembly (e.g. identify read labels with trprop 80-90% and exclude them from sequence files).
 
-Finally, note that ```trf``` can output a ```fasta``` file in which all detected tandems are masked as NNNNs (on each read). If an assembler could accept such files and use that information to trim or correct sequences accordingly, it could be interesting.
 
 # How to cite this script
 
