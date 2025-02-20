@@ -7,7 +7,7 @@
 
 The problem is that ```trf``` reports multiple overlapping tandem boundaries for a given repetitive region. This is due to the imperfect nature of repetitive DNA and the period of the detected repetitive motif linked to ```trf``` parameters. Note that sequencing errors may also affect the detection of these boundaries. 
 
-**Thus, ```trop``` parses the lowest and highest boundary of a repetitive region**
+**``trop``` parses for the LOWEST and HIGHEST boundary of a repetitive region**
 
 ![Screenshot](fig/trop_scheme.png)
 
