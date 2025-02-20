@@ -83,14 +83,12 @@ Install ```perl``` version 5 or newer
 
 Open your terminal (on windows, macos or linux)
 
-Indicate the directory where you placed the above files (or drag and drop the directory to the terminal window, which will fill the path automatically). 
-
-Here an example path indicated in windows command prompt.
+Indicate the directory where you placed the above files (or drag and drop the directory to the terminal window, which will fill the path automatically). Here an example path indicated in windows command prompt.
 
 ```
 cd C:/Users/tomsauv/my_analyses
 ```
-Run the following command with the example files:
+Then, run the following command with the example files:
 ```
 perl trop_v7.pl NA_all.fasta.2.5.7.80.10.50.2000.dat NA_all_tabulated_lengths.txt
 ```
