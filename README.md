@@ -83,7 +83,9 @@ Install ```perl``` version 5 or newer
 
 Open your terminal (on windows, macos or linux)
 
-Indicate the directory where you placed the above files (or drag and drop the directory to the terminal window, which will fill the path automatically)
+Indicate the directory where you placed the above files (or drag and drop the directory to the terminal window, which will fill the path automatically). 
+
+Here an example path indicated in windows command prompt.
 
 ```
 cd C:/Users/tomsauv/my_analyses
